@@ -1,0 +1,41 @@
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  .app {
+    padding: var(--spacing-sm);
+  }
+  
+  .voice-room {
+    width: 100%;
+    padding: var(--spacing-sm);
+  }
+  
+  .room-controls {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .record-button, .stop-button, .clear-button {
+    width: 100%;
+  }
+  
+  .messages-container {
+    max-height: 60vh;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .voice-room {
+    width: 80%;
+    padding: var(--spacing-md);
+  }
+}
+
+/* Десктоп */
+@media (min-width: 1025px) {
+  .voice-room {
+    width: 60%;
+    max-width: 800px;
+    padding: var(--spacing-lg);
+  }
+}
